@@ -1,0 +1,68 @@
+---
+title: "Sollicitatiebrief"
+author: "Marco Bunt"
+output:
+  pagedown::html_letter:
+    self_contained: false
+links-to-footnotes: false
+paged-footnotes: false
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+library(rmarkdown)
+#render("../cv-master/Letter.Marco.Bunt.Rmd", output_format = "word_document")
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- F
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+Adress <- read.delim('./BriefAdres.csv', sep = ";") %>% filter(org == #"APPM"
+                                                                 "CE Delft"
+                                                               )
+```
+
+::: from
+Marco Bunt <br>
+Molenstraat 124 <br>
+3052 RE Rotterdam <br> 
+
+:::
+`r Adress$org` <br>
+t.a.v. `r Adress$name` `r Adress$sirname` <br>
+`r Adress$ad1` <br>
+`r Adress$ad2` <br>
+
+Betreft: Sollicitatie `r Adress$func`
+
+::: date
+Rotterdam, `r format(Sys.time(), "%d %b, %Y")`
+:::
+
+Beste `r Adress$gender` `r Adress$sirname`,
+
+Na een tijd bij verschillende netbeheerders te hebben gewerkt, ben ik toe aan een nieuwe rol in de energietransitie. Ik wil sturing geven bij  het optreden  van overheden en andere betrokkenen in de energietransitie en ik wil werken aan systeemintegratie. Naast duurzame opwek gaat de transitie ook over verbindingen tussen sectoren, seizoenen en technologieën. Betrokken partijen dienen ieder een rol te vervullen bij het tot een succes maken van de energietransitie. Hierbij is  het belangrijk de betrokkenen samen te brengen en te voorzien van kennis en informatie. Hier wil ik graag aan meewerken.
+
+`r Adress$midden`
+
+Door mijn vaardigheden als onderzoeker en door mijn werkervaringen  bij netbeheerders begrijp ik de krachtvelden  in de energiewereld. Dat maakt mij een geschikte kandidaat voor de functie `r Adress$func`. Ik ben goed in het in het oplossen van complexe vraagstukken, waarbij ik gebruik maak van zowel mijn communicatieve als analytische vaardigheden. Ik beschik over specialistische kennis van de energietransitie en  ben daarbij ook in staat om te generaliseren, te organiseren en te verbinden. Op grond van mijn positieve werkervaringen verwacht ik mij goed te kunnen aanpassen aan de eisen en taken als `r Adress$func`. Daarom hoop ik dat u mij uitnodigt voor een gesprek, zodat ik mijn enthousiasme voor `r Adress$org` en voor deze functie verder kan toelichten.
+
+
+Met vriendelijke groet ,
+
+Marco Bunt
+
+
+Bijlage: Curriculum Vitae

@@ -1,0 +1,19 @@
+section;in_resume;title;loc;institution;start;end;description_1;description_2;description_3
+education;TRUE;Sociology master Urban studies;Erasmus School of Social and Behavioural Sciences;Rotterdam;;2019;Thesis: Sociotechnical energy imaginaries of non-users of ECO-innovations: identification and perceptions of residential households not adopting solar energy (grade: 8).;;
+education;TRUE;Pre-master Sociology;Erasmus School of Social and Behavioural Sciences;Rotterdam;2017;2018;;;
+education;TRUE;Hogere gastechniek; Kiwa Gastec ;Apeldoorn;;2014;;;
+education;TRUE;Pre-master mechanical engineering;Tu-Delft;Delft;;2013;;;
+education;TRUE;Mechanical engineering;Haagse Hogeschool;Delft;2008;2013;"Thesis: Converting  biomass to anergy; A case study in Uganda rural environment(grade: 7).";Intership: R&D optimizing injection molding process of corn conveyor-belt components (grade: 9);
+education;TRUE;VMBO Installatietechniek ;Kalsbeek college;Woerden;2001;2005;;;
+industry_positions;TRUE;Grid analytics;Stedin;Rotterdam;2019;present;Modeling the impact of the energy transition on the load of the energy network, using diferend techniques like regression, classification, and machine learing. Participating in data-werkgroep RES (regionale energie strategie), to create a format to asses the impact of RES scenario's om the energy network.;Developing and implementation of portfolio optimisation. Designing a framework and the necessary software to enable the management to choose a risk-based investment portfolio.;Participating in several working groups for grid operators, e.g., MORGAN (MOet Regulering Gasnetten ANders) en iNET (intergraal Netwerk en Energiesysteem van de Toekomst).
+industry_positions;TRUE;Risk manager;Stedin;Rotterdam;;2018;Responsible for assessing risk of the gas-asset portfolio via the ISO5001 framework, by creating models to asses the risk of the complex system in a uniform way.;Building monitoring system for predicting failure of gas pipes due to ground sinkage via satellite data.;
+industry_positions;TRUE;Asset quality specialist;Stedin;Rotterdam;;2017;Workin on the design, implementation and monitoring of measures to ensure asset quality. Translating asset quality measures to investment planning.; E.g., the development of sensors for the cathodic protection system for steel pipes.;
+industry_positions;TRUE;Network planner gas;Stedin;Rotterdam;;2016;Point of contact for internal and external stakeholders on all initiatives that may have an impact on the gas network.;;
+industry_positions;TRUE; Traineeship asset management;Enexis;Breda;;2014;Predictive maintenance for network components (RCM, FMECA, ISO55000).;Development of a reporting system concerning the maintenance of network components.;Wrinting an evaluation of  project proposals for work on gas-network.
+industry_positions;TRUE; Taxichaufeur; Taxi Deltax ;Delft;;2013;Partime work, mainly the transport of elderly people.;;
+industry_positions;TRUE; Mechanical engineer; Futuration ;Delft;2011;2012; Futuration is a young company with innovative products to educate children about the enviroment and sustainability.;Worked as a mecanical engineer and developer at the development of new products.;
+;;;;;;;;;
+Oter_activity;TRUE;Co-auteur;opzoeknaardemaker.nl;;;2020;Investigating relation between the value of products in the supermarket, and the price farmers recive;;
+Oter_activity;TRUE;Volunteer;Stichting Timon;;2015;2019;Volunteer in residential community for young people in need of help;;
+Oter_activity;TRUE;Travel agent / tour leader;Crossroads Active Jongerenreizen;;2012;2014;;;
+Oter_activity;TRUE;Volleybalcoach ;VSTS heren 1;;2013;2014;;;

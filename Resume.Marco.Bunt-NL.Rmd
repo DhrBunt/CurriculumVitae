@@ -1,0 +1,150 @@
+---
+title: Marco Bunt Resume"
+author: Marco Bunt
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+
+---
+
+
+```{r load csv, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+library(readr)
+library(dplyr) 
+
+source('parsing_functions.R')
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- T
+links <- c()
+
+position_data <- read_delim("positions_nl.csv", ";", escape_double = FALSE, trim_ws = TRUE, skip_empty_rows = TRUE) %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      section %in% c('Projects') ~ 'projects',
+      section %in% c('Training') ~ 'training',
+      section %in% c('Oter_activity') ~ 'activity',
+      TRUE ~ section
+    )
+  )
+
+intro_text <- read_delim("omschrijvingen.csv", ";", escape_double = FALSE, 
+                         trim_ws = TRUE, skip_empty_rows = TRUE) %>%
+  filter(Print) %>% pull(intro_nl) %>% paste(collapse = "\n\n") 
+
+skills <-read_delim("skills.csv", ";", escape_double = FALSE, 
+                         trim_ws = TRUE, skip_empty_rows = TRUE) %>% filter(Print) 
+
+```
+
+
+Aside
+================================================================================
+
+
+![logo](photo.JPG){width=100%}
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+- <i class="fas fa-home"></i> 5062 HK Oisterwijk
+- <i class="fa fa-envelope"></i> marcobunt@gmail.com
+- <i class="fa fa-github"></i> [github.com](https://github.com/MeneerBunt)
+- <i class="fab fa-linkedin"></i> [linkedin.com](https://www.linkedin.com/in/marco-bunt-47a2893a/?originalSubdomain=nl)
+- <i class="fa fa-phone"></i> (+31) 623854643
+- <i class="fas fa-user"></i> 06-10-1987
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+
+```{r}
+skills_text <- skills %>% 
+  pull(skill_nl) %>%  # Haal de kolom 'skill' op
+  paste(collapse = "\n- ")  # Voeg de waarden samen, voorafgegaan door een streepje
+
+cat(paste0("- ", skills_text))
+```
+
+OFF-TIME {#open-source}
+--------------------------------------------------------------------------------
+
+- Vader 
+- Muziek (gitaar, piano)
+- Sport (padel, hardlopen)
+- Verbouwen
+- Lezen
+
+References {#more-info}
+--------------------------------------------------------------------------------
+
+Roy van Ginneken <br>
+- Proces consultant Green Digit <br>
+<i class="fa fa-envelope"></i> roy@greendigit.nl <br>
+<i class="fa fa-phone"></i> (+31) 630078354
+
+
+Main
+================================================================================
+
+Marco Bunt {#title}
+--------------------------------------------------------------------------------
+
+```{r omschrijving}
+cat(sanitize_links(intro_text))
+```
+
+
+Selected projects {data-icon=industry}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('projects')
+```
+
+
+Selected Positions {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r positions}
+position_data %>% print_section('positions')
+
+```
+
+Training {data-icon=book-open-reader}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('training')
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+
+Activity {data-icon=newspaper}
+---------------------------------
+
+```{r}
+position_data %>% print_section('activity')
+```
+
+

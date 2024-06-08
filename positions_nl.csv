@@ -1,0 +1,42 @@
+section;in_resume;title;loc;institution;start;end;description_1;description_2;description_3
+;;;;;;;;;
+;;;;;;;;;
+education;TRUE;Sociology master Urban studies;Erasmus School of Social and Behavioural Sciences;Rotterdam;;2019;Thesis: Sociotechnical energy imaginaries of non-users of ECO-innovations: identification and perceptions of residential households not adopting solar energy (grade: 8).;;
+education;TRUE;Pre-master Sociology;Erasmus School of Social and Behavioural Sciences;Rotterdam;2017;2018;;;
+education;;Hogere gastechniek; Kiwa Gastec ;Apeldoorn;;2014;;;
+education;TRUE;Pre-master mechanical engineering;Tu-Delft;Delft;;2013;;;
+education;TRUE;Mechanical engineering;Haagse Hogeschool;Delft;2008;2013;"Thesis: Converting  biomass to anergy; A case study in Uganda rural environment(grade: 7).";Intership: R&D optimizing injection molding process of conveyor-belt components (grade: 9);
+education;TRUE;VMBO Installatietechniek ;Kalsbeek college;Woerden;2001;2005;;;
+;;;;;;;;;
+;;;;;;;;;
+industry_positions;TRUE;Co-owner;Green Digit;Rotterdam;2021;heden;Green Digit helpt bedrijven bedrijven met continu verbeteren voor het toepassen van de 4M methode.;Monitoring: het identificeren van relevante KPI's, het verzamel en het modeleren van date t.b.v. deze KPIs en verwerken in een dashboard, en het implementeren van het dashbaord.;Mensen: coachen en trainen van mensen in de organisatie op het gebied van lean en data, Middelen: we bouwen apps tbv digitalisatie, Methode: procesoptimalisatie vanuit lean six sigma
+industry_positions;TRUE;Asset management;Stedin;Rotterdam;2016;2021;Gewerkt in verschillende functies als data scientist aan de energietransistie, waarbij ik door middel van analyses de toekomstige staat van het netwerk modelleerde en investeringsroutes voorspelde.;;
+industry_positions;;Grid analytics;Stedin;Rotterdam;2019;2021;Modelleren van de impact van de energietransitie op de belasting van het energienetwerk, met behulp van verschillende technieken zoals regressie, classificatie en machine learning. Deelnemen aan data-werkgroep RES (regionale energie strategie), om een format te creeren om de impact van RES-scenario's op het energienetwerk te beoordelen.;Ontwikkeling en implementatie van portefeuille-optimalisatie. Ontwerpen van een kader en de benodigde software om het management in staat te stellen een risicogebaseerde investeringsportefeuille te kiezen.;Deelnemen aan verschillende werkgroepen voor netbeheerders, zoals MORGAN (MOet Regulering Gasnetten ANders) en iNET (integraal Netwerk en Energiesysteem van de Toekomst).
+industry_positions;;Risk manager;Stedin;Rotterdam;;2018;Verantwoordelijk voor het beoordelen van risico's van de gasassetportefeuille via het ISO5001-kader, door modellen te creeren om het risico van het complexe systeem op een uniforme manier te beoordelen.;Bouw van een monitorsysteem voor het voorspellen van het falen van gasleidingen als gevolg van bodemdaling via satellietgegevens.;
+industry_positions;;Asset quality specialist;Stedin;Rotterdam;;2017;Werken aan het ontwerp, de implementatie en monitoring van maatregelen om de kwaliteit van activa te waarborgen. Het vertalen van kwaliteitsmaatregelen voor activa naar investeringsplanning. Bijvoorbeeld de ontwikkeling van sensoren voor het kathodische beschermingssysteem voor stalen leidingen.;;
+industry_positions;;Network planner gas;Stedin;Rotterdam;;2016;Aanspreekpunt voor interne en externe belanghebbenden voor alle initiatieven die invloed kunnen hebben op het gasnetwerk.;;
+industry_positions;TRUE; Traineeship asset management;Enexis;Breda;2013;2014;Traineeship, met veel ruimte voor persoonlijke ontwikelling. Hier heb ik o.a. gewerkt aan het voorspellen van de onderhoudsbehoefte van assets.;;
+industry_positions;; Traineeship asset management;Enexis;Breda;;2014;Voorspellend onderhoud voor netwerkelementen (RCM, FMECA, ISO55000).;Ontwikkeling van een rapportagesysteem met betrekking tot het onderhoud van netwerkelementen.;Schrijven van een evaluatie van projectvoorstellen voor werkzaamheden aan het gasnetwerk.
+industry_positions;; Taxichaufeur; Taxi Deltax ;Delft;;2013;Parttime werk, voornamelijk ouderen vervoer.;;
+industry_positions;; Mechanical engineer; Futuration ;Delft;2011;2012;Futuration is een jong bedrijf met innovatieve producten om kinderen te onderwijzen over het milieu en duurzaamheid.;Gewerkte als mechanisch ingenieur en ontwikkelaar bij de ontwikkeling van nieuwe producten.;
+;;;;;;;;;
+Projects;TRUE;Business Analyst;Bunnik Logistics;Bleiswijk;2023;2024;Ontwikkelen van een PowerBI dashboard op logistieke software (navitrans);Een rapportage voor omzet- en margeberekeningen ontwikkeld op klantniveau, waarbij de kosten en omzet van een rit worden verdeeld over de acties.;
+Projects;TRUE;Business Analyst;Leybaert;Antwerpen;2024;2024;Implementatie van BI-oplossingen voor voorraadbeheer;Ontwikkelen van een app gewasregistratie;
+Projects;;Business Analyst RPA;S2S;Breda;2024;2024;Geautomatiseerde online cursusinschrijvingsprocessen.;;
+Projects;TRUE;Business Analyst;Bakkerij Visser;Alphen a/d Rijn;2023;2023;Verspilling in het productieproces geminimaliseerd door verspilling te identificeren en kwantificeren met behulp van een PowerBI-dashboard.;;
+Projects;TRUE;Data architect;Bunnik Plants;Bleiswijk;2022;2023;Opzetten dan datamodel t.b.v. BI rapportage. PowerBI & Azure Data Factory.;;
+Projects;TRUE;Process Expert;Ton Smit Garagedeuren;Kamerik;2022;2023;Werkproces analyse voor ontwikkeling van een maatwerk app mbt werkplanning.;Bouw van een onderhoudsplanning programma tbv onderhoud garagedeuren.;
+Projects;TRUE;Product Owner / Data Scientist;Allianz Direct;Rotterdam;2021;2022;Analyseren van klantverloop en identificeren van oplossingen om klantverloop te voorkomen.;;
+Projects;TRUE;LSS Consultant;Marjoland Rozen;Bleiswijk;2021;2022;LLS-project voor het verhogen van de productkwaliteit.;Bouwen en beheren van ML model btv het gewocht van rozen;Buisness analyse dmv dashboarding.
+;;;;;;;;;
+;;;;;;;;;
+Oter_activity;TRUE;Applicatieontwikkelaar ;Green Digit;Rotterdam;2022;2023;We werken bij GreenDigit aan een eigen ERP systeem voor glastuinbouw;;
+Oter_activity;TRUE;Computer Vision Expert;Green Digit;Rotterdam;2022;2023;Een computervisie-oplossing ontwikkeld voor het monitoren van plantengroei, inclusief algoritmen voor het detecteren van risico's en het meten van groeisnelheid.;;
+;;;;;;;;;
+Oter_activity;;Co-auteur;opzoeknaardemaker.nl;;;2020;Onderzoek naar de relatie tussen de waarde van producten in de supermarkt en de prijs die boeren ontvangen.;;
+Oter_activity;;Volunteer;Stichting Timon;;2015;2019;Vrijwilliger in een woongemeenschap voor jongeren die hulp nodig hebben.;;
+Oter_activity;;Travel agent / tour leader;Crossroads Active Jongerenreizen;;2012;2014;;;
+Oter_activity;;Volleybalcoach ;VSTS heren 1;;2013;2014;;;
+;;;;;;;;;
+Training;TRUE;MS Fabric Analytics Engineer (DP-600);Microsoft;Rotterdam;2024;heden;;;
+Training;TRUE;Black Belt;The Lean Six Sigma Company;Rotterdam;;2021;;;

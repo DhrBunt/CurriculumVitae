@@ -1,0 +1,40 @@
+/* Uitschakelen van paginanummers */
+@page {
+  size: A4;
+  margin: 1in;
+  counter-increment: none;
+}
+
+.page-number {
+  display: none;
+}
+
+/* Algemene stijlen voor de brief */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0; /* De marges worden door de @page-regel ingesteld */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  margin: 0 0 1em 0;
+}
+
+header, footer {
+  display: none;
+}
+
+/* Specifieke stijlen voor de brief */
+.letter-head {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.signature {
+  margin-top: 2em;
+}

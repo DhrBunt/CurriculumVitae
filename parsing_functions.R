@@ -77,19 +77,21 @@ print_section <- function(position_data, section_id){
       )
     ) %>% 
     strip_links_from_cols(c('title', 'description_bullets')) %>% 
-    mutate_all(~ifelse(is.na(.), 'N/A', .)) %>% 
-    glue_data(
-      "### {title}",
-      "\n\n",
-      "{loc}",
-      "\n\n",
-      "{institution}",
-      "\n\n",
-      "{timeline}", 
-      "\n\n",
-      "{description_bullets}",
-      "\n\n\n",
-    )
+    mutate(across(everything(), ~ifelse(is.na(.), 'N/A', .))) %>% 
+    {
+      glue_data(.,
+                "### {title}",
+                "\n\n",
+                "{loc}",
+                "\n\n",
+                "{institution}",
+                "\n\n",
+                "{timeline}", 
+                "\n\n",
+                "{description_bullets}",
+                "\n\n\n"
+      )
+    }
 }
 
 # Construct a bar chart of skills
@@ -107,4 +109,3 @@ build_skill_bars <- function(skills, out_of = 5){
       "</div>"
     )
 }
-

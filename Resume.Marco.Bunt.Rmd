@@ -11,38 +11,40 @@ output:
 ---
 
 
-```{r, include=FALSE}
+```{r load csv, include=FALSE}
 knitr::opts_chunk$set(
   results='asis', 
   echo = FALSE
 )
 library(tidyverse)
 library(glue)
+library(readr)
+library(dplyr)
+source('parsing_functions.R')
 
 # Set this to true to have links turned into footnotes at the end of the document
 PDF_EXPORT <- T
-
-# Holds all the links that were inserted for placement at the end
 links <- c()
 
-source('parsing_functions.R')
-
-
-# First let's get the data, filtering to only the items tagged as
-# Resume items
-position_data <- read_delim("positions.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE, skip_empty_rows = T) %>% 
+position_data <- read_delim("positions.csv", ";", escape_double = FALSE, trim_ws = TRUE, skip_empty_rows = TRUE) %>% 
   filter(in_resume) %>% 
   mutate(
     # Build some custom sections by collapsing others
     section = case_when(
       section %in% c('research_positions', 'industry_positions') ~ 'positions', 
       section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      section %in% c('Projects') ~ 'projects',
       section %in% c('Oter_activity') ~ 'activity',
-
       TRUE ~ section
     )
-  ) 
+  )
+
+intro_text <- read_delim("omschrijvingen.csv", ";", escape_double = FALSE, 
+                         trim_ws = TRUE, skip_empty_rows = TRUE) %>%
+  filter(Print) %>% pull(intro_eng) %>% paste(collapse = "\n\n") 
+
+skills <-read_delim("skills.csv", ";", escape_double = FALSE, 
+                         trim_ws = TRUE, skip_empty_rows = TRUE) %>% filter(Print) 
 
 ```
 
@@ -67,19 +69,13 @@ Contact {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
+
 ```{r}
-skills <- tribble(
-  ~skill,               ~level,
-  "Analytics (Python, R, SQL) ", 4.75,
-  "Communication (EN, NL)",  4.6,
-  "Maintenance enginering", 4.4,
-  "Research", 4.3,
-  "Sociology", 4.1,
-  "Sustainability", 4.55
-  
-  
-)
-build_skill_bars(skills)
+skills_text <- skills %>% 
+  pull(skill) %>%  # Haal de kolom 'skill' op
+  paste(collapse = "\n- ")  # Voeg de waarden samen, voorafgegaan door een streepje
+
+cat(paste0("- ", skills_text))
 ```
 
 OFF-TIME {#open-source}
@@ -94,15 +90,11 @@ OFF-TIME {#open-source}
 References {#more-info}
 --------------------------------------------------------------------------------
 
-Yakup Koc (supervisor)<br>
-- Manager Grid-analytics <br>
-<i class="fa fa-envelope"></i> Yakup.Koc@stedin.net <br>
-<i class="fa fa-phone"></i> (+31) 618340069
+Roy van Ginneken <br>
+- Proces consultant Green Digit <br>
+<i class="fa fa-envelope"></i> roy@greendigit.nl <br>
+<i class="fa fa-phone"></i> (+31) 630078354
 
-Michiel Tramper (friend)<br>
-- Owner creativesolvers <br>
-<i class="fa fa-envelope"></i> michiel@creativesolvers.com <br>
-<i class="fa fa-phone"></i> (+31) 618340069
 
 Main
 ================================================================================
@@ -110,15 +102,7 @@ Main
 Marco Bunt {#title}
 --------------------------------------------------------------------------------
 
-```{r}
-intro_text <- "
-  A driven researcher with strong communication skills. Specialized in the energy field and works well in multidisciplinary teams and always challenges himself to do better. Likes to work on system integration, sustainability, and many other things.
-
-At the moment working as a data-scientist on complex models. Not as a lonely researcher in an ivory tower, but with feet firmly embedded in the business. Has a firm conviction that people should not be alone. Not in their private life, not in their professional life.
-
-"
-
-
+```{r omschrijving}
 cat(sanitize_links(intro_text))
 ```
 
@@ -127,8 +111,9 @@ cat(sanitize_links(intro_text))
 Selected Positions {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r positions}
 position_data %>% print_section('positions')
+
 ```
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -138,8 +123,15 @@ Education {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
-Activity {data-icon=newspaper}
+Projects {data-icon=industry}
 --------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('projects')
+```
+
+Activity {data-icon=newspaper}
+---------------------------------
 
 ```{r}
 position_data %>% print_section('activity')

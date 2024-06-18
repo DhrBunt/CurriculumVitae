@@ -1,36 +1,42 @@
 section;in_resume;title;loc;institution;start;end;description_1;description_2;description_3
 ;;;;;;;;;
 ;;;;;;;;;
-"education;TRUE;Master's in Sociology, Urban Studies;Erasmus School of Social and Behavioural Sciences;Rotterdam;;2019;Thesis: Sociotechnical energy imaginaries of non-users of ECO-innovations: identification and perceptions of residential households not adopting solar energy (grade: 8).;;";;;;;;;;;
-education;TRUE;Pre-Master's in Sociology;Erasmus School of Social and Behavioural Sciences;Rotterdam;2017;2018;;;
-education;TRUE;Advanced Gas Technology;Kiwa Gastec ;Apeldoorn;;2014;;;
-education;TRUE;Pre-Master's in Mechanical Engineering;TU Delft;Delft;;2013;;;
-education;TRUE;Mechanical Engineering;The Hague University of Applied Sciences;Delft;2008;2013;Thesis: Converting biomass to energy; A case study in Uganda rural environment (grade: 7).;Internship: R&D optimizing injection molding process of conveyor-belt components (grade: 9)
-education;TRUE;VMBO Installation Technology;Kalsbeek College;Woerden;2001;2005;;;
+education;TRUE;Sociology master Urban studies;Erasmus School of Social and Behavioural Sciences;Rotterdam;;2019;Thesis: Sociotechnical Energy Imaginaries of Non-Users of ECO-Innovations: Identification and Perceptions of Residential Households Not Adopting Solar Energy (grade: 8).;;
+education;TRUE;Pre-master Sociology;Erasmus School of Social and Behavioural Sciences;Rotterdam;2017;2018;;;
+education;;Hogere gastechniek; Kiwa Gastec ;Apeldoorn;;2014;;;
+education;TRUE;Pre-master mechanical engineering;Tu-Delft;Delft;;2013;;;
+education;TRUE;Mechanical engineering;Haagse Hogeschool;Delft;2008;2013;"Thesis: Converting Biomass to Energy; A Case Study in Uganda Rural Environment (grade: 7)";Internship: R&D Optimizing Injection Molding Process of Conveyor-Belt Components (grade: 9).;
+education;TRUE;VMBO Installatietechniek ;Kalsbeek college;Woerden;2001;2005;;;
 ;;;;;;;;;
 ;;;;;;;;;
-industry_positions;TRUE;Co-owner;Green Digit;Rotterdam;2021;present;Green Digit helps companies overcome daily challenges by designing, improving, and innovating processes.,"Focus on making smart tools accessible to all companies, not just large enterprises.","Used mobile app technology, cloud computing infrastructure, and BI solutions to make companies data-driven.";
-industry_positions;TRUE;Grid analytics;Stedin;Rotterdam;2019;2021;"Modeling the impact of the energy transition on the load of the energy network using various techniques such as regression, classification, and machine learning.";
-industry_positions;TRUE;Grid analytics;Stedin;Rotterdam;2019;2021;Modeling the impact of the energy transition on the load of the energy network using various techniques such as regression, classification, and machine learning. Participated in the RES (Regional Energy Strategy) data working group to create a format for assessing the impact of RES scenarios on the energy network.;Development and implementation of portfolio optimization. Designing a framework and the necessary software to enable management to choose a risk-based investment portfolio.;Participated in various working groups for grid operators, such as MORGAN (MOet Regulering Gasnetten ANders) and iNET (integrated Network and Energy System of the Future).
-industry_positions;TRUE;Risk manager;Stedin;Rotterdam;;2018;Responsible for assessing the risks of the gas asset portfolio through the ISO5001 framework, by creating models to uniformly assess the risk of the complex system.;Building a monitoring system for predicting gas pipeline failures due to subsidence using satellite data.;
-industry_positions;TRUE;Asset quality specialist;Stedin;Rotterdam;;2017;Working on the design, implementation, and monitoring of measures to ensure asset quality. Translating asset quality measures into investment planning. For example, the development of sensors for the cathodic protection system for steel pipelines.;
-industry_positions;TRUE;Network planner gas;Stedin;Rotterdam;;2016;Point of contact for internal and external stakeholders for all initiatives that may affect the gas network.;
-industry_positions;TRUE;Traineeship asset management;Enexis;Breda;;2014;Predictive maintenance for network elements (RCM, FMECA, ISO55000).;Development of a reporting system related to the maintenance of network elements.;Writing an evaluation of project proposals for work on the gas network.
-industry_positions;TRUE;Taxi driver;Taxi Deltax;Delft;;2013;Part-time work, mainly transporting elderly people.;
-industry_positions;TRUE;Mechanical engineer;Futuration;Delft;2011;2012;Futuration is a young company with innovative products to educate children about the environment and sustainability.;Worked as a mechanical engineer and developer in the development of new products.;
+industry_positions;TRUE;Co-owner;Green Digit;Rotterdam;2021;now;Green Digit helps companies continuously improve by applying the 4M method. ;Monitoring: identifying relevant KPIs, collecting and modeling data for these KPIs and processing it into a dashboard, and implementing the dashboard. ;People: coaching and training people in the organization in lean and data. Resources: we build apps for digitalization. Method: process optimization based on lean six sigma.
+industry_positions;TRUE;Asset management;Stedin;Rotterdam;2016;2021;Worked in various roles as a data scientist on the energy transition, where I modeled the future state of the network through analyses and predicted investment routes.;;
+industry_positions;;Grid analytics;Stedin;Rotterdam;2019;2021;Modeling the impact of the energy transition on the load of the energy network using various techniques such as regression, classification, and machine learning. Participating in data working group RES (regional energy strategy) to create a format to assess the impact of RES scenarios on the energy network. Development and implementation of portfolio optimization. Designing a framework and the necessary software to enable management to choose a risk-based investment portfolio. Participating in various working groups for network operators, such as MORGAN (MOet Regulering Gasnetten ANders) and iNET (integral Network and Energy System of the Future).;;
+industry_positions;;Risk manager;Stedin;Rotterdam;;2018;Responsible for assessing risks of the gas asset portfolio via the ISO5001 framework by creating models to uniformly assess the risk of the complex system. Building a monitoring system for predicting gas pipeline failure due to subsidence using satellite data. Working on the design, implementation, and monitoring of measures to ensure asset quality. Translating quality measures for assets into investment planning. For example, the development of sensors for the cathodic protection system for steel pipelines.;;
+industry_positions;;Asset quality specialist;Stedin;Rotterdam;;2017;Point of contact for internal and external stakeholders for all initiatives that may affect the gas network.;;
+industry_positions;;Network planner gas;Stedin;Rotterdam;;2016;;;
+industry_positions;TRUE; Traineeship asset management;Enexis;Breda;2013;2014;Traineeship with ample space for personal development. Here, I worked on predicting the maintenance needs of assets.;Predictive maintenance for network elements (RCM, FMECA, ISO55000).;Development of a reporting system regarding the maintenance of network elements. Writing an evaluation of project proposals for work on the gas network.
+industry_positions;; Traineeship asset management;Enexis;Breda;;2014;;;
+industry_positions;; Taxichaufeur; Taxi Deltax ;Delft;;2013;Part-time work, mainly elderly transportation.;;
+industry_positions;; Mechanical engineer; Futuration ;Delft;2011;2012;Futuration is a young company with innovative products to educate children about the environment and sustainability. Worked as a mechanical engineer and developer in the development of new products.;;
 ;;;;;;;;;
-Projects;FALSE;Business Analyst;Leybaert;Antwerp;2024;;Implementation of BI solutions for inventory management.;
-Projects;FALSE;Business Analyst RPA;S2S;Breda;2024;;Automated online course enrollment processes.;
-Projects;TRUE;Business Analyst;Bakkerij Visser;Alphen a/d Rijn;2023;;Minimized waste in the production process by identifying and quantifying waste using a PowerBI dashboard.;
-Projects;TRUE;Computer Vision Expert;Green Digit;Rotterdam;2022;2023;Developed a computer vision solution for monitoring plant growth, including algorithms for detecting risks and measuring growth rate.;
-Projects;TRUE;Business Analyst;Bunnik Plants;Bleiswijk;2022;present;Improved plant planning in the greenhouse to maximize plant capacity using PowerBI & Azure Data Factory.;
-Projects;TRUE;Process Expert;Ton Smit Garage Doors;Kamerik;2022;2023;Optimized workflow through the design, development, and implementation of a digital app for efficient workflow management.;
-Projects;TRUE;Product Owner / Data Scientist;Allianz Direct;Rotterdam;2021;2022;Analyzed customer churn and identified solutions to prevent customer churn.;
-Projects;TRUE;LSS Consultant;Marjoland Roses;Bleiswijk;2021;present;LLS project to improve product quality.;
+Projects;TRUE;Business Analyst;Bunnik Logistics;Bleiswijk;2023;2024;Developing a PowerBI dashboard on logistics software (Navitrans).;Developed a report for revenue and margin calculations at the customer level, where the costs and revenue of a trip are divided over the actions.;
+Projects;TRUE;Business Analyst;Leybaert;Antwerpen;2024;2024;Implementing BI solutions for inventory management. ;Developing a crop registration app.;
+Projects;;Business Analyst RPA;S2S;Breda;2024;2024;Automated online course enrollment processes.;;
+Projects;TRUE;Business Analyst;Bakkerij Visser;Alphen a/d Rijn;2023;2023;Minimizing waste in the production process by identifying and quantifying waste using a PowerBI dashboard.;;
+Projects;TRUE;Data architect;Bunnik Plants;Bleiswijk;2022;2023;Setting up a data model for BI reporting. PowerBI & Azure Data Factory.;;
+Projects;TRUE;Process Expert;Ton Smit Garagedeuren;Kamerik;2022;2023;Work process analysis for developing a custom app for work planning.;Building a maintenance planning program for garage door maintenance.;
+Projects;TRUE;Product Owner / Data Scientist;Allianz Direct;Rotterdam;2021;2022;Analyzing customer turnover and identifying solutions to prevent customer turnover.;;
+Projects;TRUE;LSS Consultant;Marjoland Rozen;Bleiswijk;2021;2022;LLS project for increasing product quality.;Building and managing ML models for the weight of roses.;Business analysis through dashboarding.
 ;;;;;;;;;
 ;;;;;;;;;
-Other_activity;TRUE;Co-author;opzoeknaardemaker.nl;;;2020;Research on the relationship between the value of products in the supermarket and the price farmers receive.;
-Other_activity;TRUE;Volunteer;Stichting Timon;;2015;2019;Volunteer in a community living project for young people in need.;
-Other_activity;TRUE;Travel agent / tour leader;Crossroads Active Youth Travel;;2012;2014;;
-Other_activity;TRUE;Volleyball coach;VSTS men 1;;2013;2014;;;
-
+Oter_activity;TRUE;DevOps engineer;Green Digit;Rotterdam;2022;2023;At GreenDigit, we are working on our own ERP system for greenhouse horticulture.;;
+Oter_activity;TRUE;Computer Vision Expert;Green Digit;Rotterdam;2022;2024; Developed a computer vision solution for monitoring plant growth, including algorithms for detecting risks and measuring growth rate.;;
+;;;;;;;;;
+Oter_activity;;Co-auteur;opzoeknaardemaker.nl;;;2020;;;
+Oter_activity;;Volunteer;Stichting Timon;;2015;2019;;;
+Oter_activity;;Travel agent / tour leader;Crossroads Active Jongerenreizen;;2012;2014;;;
+Oter_activity;;Volleybalcoach ;VSTS heren 1;;2013;2014;;;
+;;;;;;;;;
+Training;TRUE;MS Fabric Analytics Engineer (DP-600);Microsoft;Rotterdam;2024;now;;;
+Training;TRUE;Black Belt;The Lean Six Sigma Company;Rotterdam;;2021;;;
